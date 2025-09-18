@@ -1,0 +1,31 @@
+// MARK: - General
+"Intro Text" = "Welcome to UX-LLM!\nLet’s predict usability issues of an app view.";
+
+"App Overview Input Title" = "App Overview";
+"App Overview Input Placeholder" = "A meditation app focused on enhancing stress relief and wellness.";
+
+"User Task Input Title" = "User Task";
+"User Task Input Placeholder" = "Reviewing their meditation history and achieved milestones.";
+
+"Source Code Input Title" = "Source Code";
+"Source Code Input Placeholder" = "import SwiftUI
+
+struct ExampleView: View {
+    var body: some View {
+        Text(\"Hello, World!\")
+    }
+}
+
+#Preview {";
+
+"Image Drop Title" = "View Image";
+"Image Drop View Targeted Text" = "Drop your image here";
+
+"Start Button Title" = "Start";
+
+"Usability Issues Presentation Title" = "Usability Issues:";
+
+// MARK: - Errors
+"App Error HTTP" = "API Error with HTTP status code: %@";
+"App Error Failed Converting ImageData" = "Error in Converting Image Data";
+"App Error Failed Image Resize URL" = "Error in Extracting Image Resize URL";

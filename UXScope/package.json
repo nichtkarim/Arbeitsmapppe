@@ -1,0 +1,46 @@
+{
+  "name": "uxscope",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "usability",
+    "testing",
+    "ui",
+    "ux",
+    "llm",
+    "automation",
+    "analysis"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Automatisierte Erkennung und Bewertung von Usability-Problemen mittels Large Language Models",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.56.0",
+    "@types/node": "^24.0.10",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.30.1",
+    "eslint-config-next": "^15.3.4",
+    "lucide-react": "^0.400.0",
+    "next": "^15.3.4",
+    "openai": "^5.10.1",
+    "postcss": "^8.5.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-dropzone": "^14.3.8",
+    "tailwindcss": "^3.4.17",
+    "together-ai": "^0.17.0",
+    "typescript": "^5.8.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/react-dropzone": "^5.1.0"
+  }
+}

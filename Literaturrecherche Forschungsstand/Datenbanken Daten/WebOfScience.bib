@@ -1,0 +1,195 @@
+﻿% This file was created with Citavi 6.19.2.1
+
+@article{Almatrafi.2025,
+ abstract = {Code duplication, commonly known as code cloning, is a persistent challenge in software development. While reusing code fragments boosts productivity, excessive cloning poses challenges to maintenance and elevates the risk of bugs. Therefore, integrating code clone detection into the development process is crucial. The extensive code-related knowledge inherent in Large Language Models (LLMs) renders them high-potential candidates for addressing diverse software engineering challenges. However, the effectiveness of LLMs in the specific task of code clone detection requires precise evaluation. This paper proposes an innovative methodology leveraging few-shot instruction-tuned GPT-3.5 Turbo and GPT-4 to detect code clones across all types, focusing on complex clones (Type-3 and Type-4). Unlike conventional approaches confined to specific language pairs or tasks, our method employs versatile language models, showcases generalization strengths for semantic understanding, and leverages instruction tuning with few-shot inference for task-specific adaptability in code clone detection. A conversational dataset was crafted from BigCloneBench for instruction tuning, enhancing task alignment and performance. This study evaluates the proficiency of LLMs in identifying code clones, analyzing the impact of instruction tuning, and assessing the efficiency across various clone types. Experimental results demonstrate these models achieving competitive performance against existing tools for overall and complex clone detection. Integration into an Integrated Development Environment (IDE) enables real-time detection and automated refactoring, bridging the gap between theoretical advancements and practical usability. This work highlights the potential of generalized LLMs setting a new standard in a field traditionally dominated by specialized tools and demonstrates their adaptability for complex challenges in code analysis and maintainability.},
+ author = {Almatrafi, A. A. and Eassa, F. A. and Sharaf, S. A.},
+ year = {2025},
+ title = {Code Clone Detection Techniques Based on Large Language Models},
+ keywords = {Clone detection;code duplication;fine-tuning;instruction tuning;Large language models;Natural language processing;Transformers},
+ pages = {46136--46146},
+ volume = {13},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ doi = {10.1109/ACCESS.2025.3549780}
+}
+
+
+@article{Bandi.2023,
+ abstract = {Generative artificial intelligence (AI) has emerged as a powerful technology with numerous applications in various domains. There is a need to identify the requirements and evaluation metrics for generative AI models designed for specific tasks. The purpose of the research aims to investigate the fundamental aspects of generative AI systems, including their requirements, models, input- output formats, and evaluation metrics. The study addresses key research questions and presents comprehensive insights to guide researchers, developers, and practitioners in the field. Firstly, the requirements necessary for implementing generative AI systems are examined and categorized into three distinct categories: hardware, software, and user experience. Furthermore, the study explores the different types of generative AI models described in the literature by presenting a taxonomy based on architectural characteristics, such as variational autoencoders (VAEs), generative adversarial networks (GANs), diffusion models, transformers, language models, normalizing flow models, and hybrid models. A comprehensive classification of input and output formats used in generative AI systems is also provided. Moreover, the research proposes a classification system based on output types and discusses commonly used evaluation metrics in generative AI. The findings contribute to advancements in the field, enabling researchers, developers, and practitioners to effectively implement and evaluate generative AI models for various applications. The significance of the research lies in understanding that generative AI system requirements are crucial for effective planning, design, and optimal performance. A taxonomy of models aids in selecting suitable options and driving advancements. Classifying input-output formats enables leveraging diverse formats for customized systems, while evaluation metrics establish standardized methods to assess model quality and performance.},
+ author = {Bandi, A. and Adapa, PVSR and Kuchi, YEVPK},
+ year = {2023},
+ title = {The Power of Generative AI: A Review of Requirements, Models, Input-Output Formats, Evaluation Metrics, and Challenges},
+ keywords = {ADVERSARIAL NETWORKS;AIGC;AIGC models;ChatGPT;generative adversarial networks;generative AI models;generative AI survey;GPT-3;GPT-4;Transformers;User experience},
+ volume = {15},
+ number = {8},
+ journal = {Future Internet},
+ doi = {10.3390/fi15080260}
+}
+
+
+@article{Deng.2025,
+ abstract = {The rapid expansion of the Internet of Things (IoT) has made software security and reliability a critical concern. With multi-language programs running on edge computing, embedded systems, and sensors, each connected device represents a potential attack vector, threatening data integrity and privacy. Symbolic execution is a key technique for automated vulnerability detection. However, unknown function interfaces, such as sensor interactions, limit traditional concrete or concolic execution due to uncertain function returns and missing symbolic expressions. Compared with system simulation, the traditional method is to construct an interface abstraction layer for the symbolic execution engine to reduce the cost of simulation. Nevertheless, the disadvantage of this solution is that the manual modeling of these functions is very inefficient and requires professional developers to spend hundreds of hours. In order to improve efficiency, we propose an LLM-based automated approach for modeling unknown functions. By fine-tuning a 20-billion-parameter language model, it automatically generates function models based on annotations and function names. Our method improves symbolic execution efficiency, reducing reliance on manual modeling, which is a limitation of existing frameworks like KLEE. Experimental results primarily focus on comparing the usability, accuracy, and efficiency of LLM-generated models with human-written ones. Our approach was integrated into one verification platform project and applied to the verification of smart contracts with distributed edge computing characteristics. The application of this method directly reduces the manual modeling effort from a month to just a few minutes. This provides a foundational validation of our method's feasibility, particularly in reducing modeling time while maintaining quality. This work is the first to integrate LLMs into formal verification, offering a scalable and automated verification solution for sensor-driven software, blockchain smart contracts, and WebAssembly systems, expanding the scope of secure IoT development.},
+ author = {Deng, L. J. and Zhong, Q. and Song, J. C. and Lei, H. and Li, W. J.},
+ year = {2025},
+ title = {LLM-Based Unknown Function Automated Modeling in Sensor-Driven Systems for Multi-Language Software Security Verification},
+ keywords = {LLM;Sensors;symbolic execution;vulnerability verification;WebAssembly},
+ volume = {25},
+ number = {9},
+ issn = {1424-8220},
+ journal = {SENSORS},
+ doi = {10.3390/s25092683}
+}
+
+
+@article{Filter.2024,
+ abstract = {The Food Safety Knowledge Exchange (FSKX) format is a community-driven effort initially created to promote the efficient exchange of data and models in the food safety domain. Over the past years this effort was driven by the Risk Assessment Knowledge Integration Platform (RAKIP) Initiative that also provided a number of software tools and FSKX-compliant model files via their website https://foodrisklabs.bfr.bund.de/rakip-initiative/. This paper describes the results of a SWOT analysis that was conducted to identify strategic avenues for enhancing FSKX's usability and adoption. The SWOT analysis identified a number of recommendations for the future evolution of FSKX. First, it is recommended to reduce the complexity of the annotation schema to ease the adoption of the format. Second, a clear distinction between the descriptive part of FSKX and the executable part is proposed. To promote the broad usage of FSKX-compliant models, it is also recommended to develop and provide FSKX-compliant APIs and resources that facilitate cloud-based execution. As part of the research to prioritize future FSKX development options, we also considered the implications of the emerging generative AI technologies, particularly which impact large language models (LLMs) might have in supporting the adoption of FSKX by the research community. Recognizing the format's application potential beyond the food safety domain, we then proposed to re-brand the FSKX acronym as {\textquotedbl}FAIR Scientific Knowledge Exchange Format{\textquotedbl} which better reflects its broad applicability in various scientific domains. Our research findings suggest that with the implementation of the improvements identified by the SWOT analysis and the broader availability of generative AI technologies the broad adoption of FSKX as a method to share data and models in a FAIR way comes into reach.},
+ author = {Filter, M. and Sch{\"u}ler, T. and {Ben Romdhane}, R.},
+ year = {2024},
+ title = {Food Safety Knowledge Exchange (FSKX) format: Current status and strategic development plans based on a SWOT analysis},
+ keywords = {Data standards;FAIR data;Knowledge exchange;Linked models},
+ volume = {27-28},
+ issn = {2352-3530},
+ journal = {MICROBIAL RISK ANALYSIS},
+ doi = {10.1016/j.mran.2024.100309}
+}
+
+
+@article{Hsueh.2024,
+ abstract = {The maturation of internet usage environments has elevated User Experience (UX) to a critical factor in system success. However, traditional manual UX testing methods are hampered by subjectivity and lack of standardization, resulting in time-consuming and costly processes. This study explores the potential of Large Language Models (LLMs) to address these challenges by developing an automated UX testing tool. Our innovative approach integrates the Rapi web recording tool to capture user interaction data with the analytical capabilities of LLMs, utilizing Nielsen's usability heuristics as evaluation criteria. This methodology aims to significantly reduce the initial costs associated with UX testing while maintaining assessment quality. To validate the tool's efficacy, we conducted a case study featuring a tennis-themed course reservation system. The system incorporated multiple scenarios per page, allowing users to perform tasks based on predefined goals. We employed our automated UX testing tool to evaluate screenshots and interaction logs from user sessions. Concurrently, we invited participants to test the system and complete UX questionnaires based on their experiences. Comparative analysis revealed that varying prompts in the automated UX testing tool yielded different outcomes, particularly in detecting interface elements. Notably, our tool demonstrated superior capability in identifying issues aligned with Nielsen's usability principles compared to participant evaluations. This research contributes to the field of UX evaluation by leveraging advanced language models and established usability heuristics. Our findings suggest that LLM-based automated UX testing tools can offer more consistent and comprehensive assessments.},
+ author = {Hsueh, N. L. and Lin, H. J. and Lai, L. C.},
+ year = {2024},
+ title = {Applying Large Language Model to User Experience Testing},
+ keywords = {AI in software development;human-computer interaction (HCI)},
+ volume = {13},
+ number = {23},
+ issn = {2079-9292},
+ journal = {ELECTRONICS},
+ doi = {10.3390/electronics13234633}
+}
+
+
+@article{Krol.2025,
+ abstract = {Featured Application The AI plugins can support website and web application auditing, facilitating preliminary evaluation of quality attributes, particularly regarding search engine optimisation and accessibility.Abstract Although large language models (LLMs) like the Generative Pre-trained Transformer (GPT) are growing increasingly popular, much remains to learn about their potential for website quality auditing. The article evaluates the performance of LLM AI plugins (GPT models) in website and web application auditing. The author built and tested two original ChatGPT-4o Plus (OpenAI) plugins: Website Quality Auditor (WQA) and WebGIS Quality Auditor (WgisQA). Their performance was cautiously and carefully analysed and compared to traditional auditing tools. The results demonstrated the limitations of the AI plugins, including their propensity for false outcomes. The general conclusion is that using AI tools without considering their characteristics may lead to the propagation of AI hallucinations in audit reports. The study fills in the research gap with the results on the capabilities and limitations of AI plugins in the context of auditing. It also suggests further directions for improvement.},
+ author = {Kr{\'o}l, K.},
+ year = {2025},
+ title = {Between Truth and Hallucinations: Evaluation of the Performance of Large Language Model-Based AI Plugins in Website Quality Analysis},
+ keywords = {ACCESSIBILITY;AI hallucinations;AI plugin;cautious approach;ChatGPT;GPT model;LLM;quality audit;TECHNOLOGIES;Usability},
+ volume = {15},
+ number = {5},
+ issn = {2076-3417},
+ journal = {APPLIED SCIENCES-BASEL},
+ doi = {10.3390/app15052292}
+}
+
+
+@article{Montella.2024,
+ abstract = {Featured Application The presented solution can be applied to simplify and hasten the development of gamified programming exercises conforming to the Framework for Gamified Programming Education (FGPE) standard.Abstract Skilled programmers are in high demand, and a critical obstacle to satisfying this demand is the difficulty of acquiring programming skills. This issue can be addressed with automated assessment, which gives fast feedback to students trying to code, and gamification, which motivates them to intensify their learning efforts. Although some collections of gamified programming exercises are available, producing new ones is very demanding. This paper presents GAMAI, an AI-powered exercise gamifier, enriching the Framework for Gamified Programming Education (FGPE) ecosystem. Leveraging large language models, GAMAI enables teachers to effortlessly apply storytelling to describe a gamified scenario, as GAMAI decorates natural language text with the sentences needed by OpenAI APIs to contextualize the prompt. Once a gamified scenario has been generated, GAMAI automatically produces exercise files in a FGPE-compatible format. According to the presented evaluation results, most gamified exercises generated with AI support were ready to be used, with no or minimum human effort, and were positively assessed by students. The usability of the software was also assessed as high by the users. Our research paves the way for a more efficient and interactive approach to programming education, leveraging the capabilities of advanced language models in conjunction with gamification principles.},
+ author = {Montella, R. and de Vita, C. G. and Mellone, G. and Ciricillo, T. and Caramiello, D. and {Di Luccio}, D. and Kosta, S. and Damasevicius, R. and Maskeliunas, R. and Queir{\'o}s, R. and Swacha, J.},
+ year = {2024},
+ title = {Leveraging Large Language Models to Support Authoring Gamified Programming Exercises},
+ keywords = {Artificial intelligence;educational tools;gamification;programming education},
+ volume = {14},
+ number = {18},
+ issn = {2076-3417},
+ journal = {APPLIED SCIENCES-BASEL},
+ doi = {10.3390/app14188344}
+}
+
+
+@article{Posedaru.2024,
+ abstract = {This paper explores diverse innovative Web scraping techniques. It initially introduces a machine learning (ML) approach capable of adapting to changing HTML structures for continuous scraping. Following this, an automated method is detailed, specifically designed to extract data from dense web pages using subject detection and node density techniques. Lastly, the article covers a computer vision-based scraping strategy that employs object recognition and OCR to visually analyse and interpret websites. These methods seek to increase online scraping efficiency and reduce the reliance on HTML structure. The present study proposes an autonomous Web scraper system that integrates Web scraping, Artificial Intelligence (AI), and Natural Language Processing (NLP) techniques, leveraging ChatGPT's natural language understanding capabilities to achieve the desired results. The recommended JavaScript program uses NLP techniques to produce webpage lists for examination and lets users query data in natural language. By utilising cutting-edge AI and ML approaches, it promises to increase Web scraping's usability and effectiveness. The article details upcoming work, such as HTML clean-up and DOM parsing advancements, and examines the benefits of the suggested approach over the currently available tools.},
+ author = {Posedaru, B. S. and Batagan, L. and Bologa, R. and Placinta, D. D. and Mirea, C. M.},
+ year = {2024},
+ title = {Software Architecture for Improving Scraping Systems Using Artificial Intelligence},
+ keywords = {ChatGPT;intelligent;Large Language Model (LLM);OpenAI;Web scraper},
+ pages = {143--160},
+ volume = {58},
+ number = {3},
+ issn = {1842-3264},
+ journal = {ECONOMIC COMPUTATION AND ECONOMIC CYBERNETICS STUDIES AND RESEARCH},
+ doi = {10.24818/18423264/58.3.24.09}
+}
+
+
+@article{Qin.2025,
+ abstract = {Fault Localization (FL) is an essential step during the debugging process. With the strong capabilities of code comprehension, the recent Large Language Models (LLMs) have demonstrated promising performance in diagnosing bugs in the code. Nevertheless, due to LLMs' limited performance in handling long contexts, existing LLM-based fault localization remains on localizing bugs within a small code scope (i.e., a method or a class), which struggles to diagnose bugs for a large code scope (i.e., an entire software system). To address the limitation, this paper presents SOAPFL, which builds an LLM-driven standard operating procedure (SOP) to automatically localize buggy methods from the entire software. By simulating the behavior of a human developer, SOAPFL models the FL task as a three-step process, which involves comprehension, navigation, and confirmation. Within specific steps, SOAPFL provides useful test behavior or coverage information to LLM through program analysis. Particularly, we adopt a series of auxiliary strategies such as Test Behavior Tracking, Document-Guided Search, and Multi-Round Dialogue to overcome the challenges in each step. The evaluation on the widely used Defects4J-V1.2.0 benchmark shows that SOAPFL can localize 175 out of 395 bugs within Top-1, which outperforms the other LLM-based approaches and exhibits complementarity to the state-of-the-art learning-based techniques. Additionally, we confirm the indispensability of the components in SOAPFL with the ablation study and demonstrate the usability of SOAPFL through a user study. Finally, the cost analysis shows that SOAPFL spends an average of only 0.081 dollars and 92 seconds for a single bug.},
+ author = {Qin, Y. H. and Wang, S. W. and Lou, Y. L. and Dong, J. H. and Wang, K. X. and Li, X. L. and Mao, X. G.},
+ year = {2025},
+ title = {SOAPFL: A Standard Operating Procedure for LLM-Based Method-Level Fault Localization},
+ keywords = {Benchmark testing;Codes;Computer bugs;Debugging;Electronic mail;Fault Localization;Large Language Model;Large language models;Location awareness;Navigation;Standards;Usability},
+ pages = {1173--1187},
+ volume = {51},
+ number = {4},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ doi = {10.1109/TSE.2025.3543187}
+}
+
+
+@article{Rodriguez.2024,
+ abstract = {Background: Generative artificial intelligence has the potential to revolutionize health technology product development by improving coding quality, efficiency, documentation, quality assessment and review, and troubleshooting. Objective: This paper explores the application of a commercially available generative artificial intelligence tool (ChatGPT) to the development of a digital health behavior change intervention designed to support patient engagement in a commercial digital diabetes prevention program. Methods: We examined the capacity, advantages, and limitations of ChatGPT to support digital product idea conceptualization, intervention content development, and the software engineering process, including software requirement generation, software design, and code production. In total, 11 evaluators, each with at least 10 years of experience in fields of study ranging from medicine and implementation science to computer science, participated in the output review process (ChatGPT vs human -generated output). All had familiarity or prior exposure to the original personalized automatic messaging system intervention. The evaluators rated the ChatGPT-produced outputs in terms of understandability, usability, novelty, relevance, completeness, and efficiency. Results: Most metrics received positive scores. We identified that ChatGPT can (1) support developers to achieve high -quality products faster and (2) facilitate nontechnical communication and system understanding between technical and nontechnical team members around the development goal of rapid and easy -to -build computational solutions for medical technologies. Conclusions: ChatGPT can serve as a usable facilitator for researchers engaging in the software development life cycle, from product conceptualization to feature identification and user story development to code generation. Trial Registration: ClinicalTrials.gov NCT04049500; https://clinicaltrials.gov/ct2/show/NCT04049500},
+ author = {Rodriguez, D. V. and Lawrence, K. and Gonzalez, J. and Brandfield-Harvey, B. and Xu, L. and Tasneem, S. and Levine, D. L. and Mann, D.},
+ year = {2024},
+ title = {Leveraging Generative AI Tools to Support the Development of Digital Solutions in Health Care Research: Case Study},
+ keywords = {app;application;applications;apps;Artificial intelligence;behavior change;behaviour change;ChatGPT;developer;developers;diabetes;diabetes prevention;diabetic;digital health;digital prescription;engagement;GenAI;generative;language model;language models;LLM;LLMs;mHealth;mobile health;Natural language processing;NLP;Software;Software engineering},
+ volume = {11},
+ issn = {2292-9495},
+ journal = {JMIR HUMAN FACTORS},
+ doi = {10.2196/52885}
+}
+
+
+@article{Wang.2025,
+ abstract = {Within the mHealth framework, systematic research that collects and analyzes patient data to establish comprehensive digital health archives for hypertensive patients, and leverages large language models (LLMs) to assist clinicians in health management and Blood Pressure (BP) control remains limited. In this study, our aims to describe the design, development and usability evaluation process of a management platform (Hyper-DREAM) for hypertension. Our multidisciplinary team employed an iterative design approach over the course of a year to develop the Hyper-DREAM platform. This platform's primary functionalities encompass multimodal data collection (personal hypertensive digital phenotype archive), multimodal interventions (BP measurement, medication assistance, behavior modification, and hypertension education) and multimodal interactions (clinician-patient engagement and BP Coach component). In August 2024, the mHealth App Usability Questionnaire (MAUQ) was conducted involving 51 hypertensive patients recruited from three distinct centers. In parallel, six clinicians engaged in management activities and contributed feedback via the Doctor's Software Satisfaction Questionnaire (DSSQ). Concurrently, a real-world comparative experiment was conducted to evaluate the usability of the BP Coach, ChatGPT-4o Mini, ChatGPT-4o and clinicians. The comparative experiment demonstrated that the BP Coach achieved significantly higher scores in utility (mean scores 4.05, SD 0.87) and completeness (mean scores 4.12, SD 0.78) when compared to ChatGPT-4o Mini, ChatGPT-4o, and clinicians. In terms of clarity, the BP Coach was slightly lower than clinicians (mean scores 4.03, SD 0.88). In addition, the BP Coach exhibited lower performance in conciseness (mean scores 3.00, SD 0.96). Clinicians reported a marked improvement in work efficiency (2.67 vs. 4.17, P {\textless} .001) and experienced faster and more effective patient interactions (3.0 vs. 4.17, P = .004). Furthermore, the Hyper-DREAM platform significantly decreased work intensity (2.5 vs. 3.5, P = .01) and minimized disruptions to daily routines (2.33 vs. 3.55, P = .004). The Hyper-DREAM platform demonstrated significantly greater overall satisfaction compared to the WeChat-based standard management (3.33 vs. 4.17, P = .01). Additionally, clinicians exhibited a markedly higher willingness to integrate the Hyper-DREAM platform into clinical practice (2.67 vs. 4.17, P {\textless} .001). Furthermore, patient management time decreased from 11.5 min (SD 1.87) with Wechat-based standard management to 7.5 min (SD 1.84, P = .01) with Hyper-DREAM. Hypertensive patients reported high satisfaction with the Hyper-DREAM platform, including ease of use (mean scores 1.60, SD 0.69), system information arrangement (mean scores 1.69, SD 0.71), and usefulness (mean scores 1.57, SD 0.58). In conclusion, our study presents Hyper-DREAM, a novel artificial intelligence-driven platform for hypertension management, designed to alleviate clinician workload and exhibiting significant promise for clinical application. The Hyper-DREAM platform is distinguished by its user-friendliness, high satisfaction rates, utility, and effective organization of information. Furthermore, the BP Coach component underscores the potential of LLMs in advancing mHealth approaches to hypertension management.},
+ author = {Wang, Y. J. and Zhu, T. J. and Zhou, T. and Wu, B. and Tan, W. P. and Ma, K. Z. and Yao, Z. Y. and Wang, J. and Li, S. Y. and Qin, F. L. and Xu, Y. N. and Tan, L. G. and Liu, J. J.},
+ year = {2025},
+ title = {Hyper-DREAM, a Multimodal Digital Transformation Hypertension Management Platform Integrating Large Language Model and Digital Phenotyping: Multicenter Development and Initial Validation Study},
+ keywords = {BLOOD-PRESSURE;ChatGPT;digital health;Digital phenotyping;Digital transformation;Hypertension management;Large language models;mobile health;Multimodal intervention;Precision medicine},
+ volume = {49},
+ number = {1},
+ journal = {Journal of Medical Systems},
+ doi = {10.1007/s10916-025-02176-1}
+}
+
+
+@article{Xiang.2024,
+ abstract = {In software maintenance, concise summaries of bug reports are crucial, significantly enhancing developer efficiency and ultimately improving software quality and user experience. Large language models (LLMs) have become the standard method for bug report summarization due to their powerful representation capabilities. However, LLM-based approaches face two primary challenges: accurately modeling the contextual relationships between various components within a bug report and the risk of overfitting when fine-tuning LLMs on datasets of limited size. To address these challenges, we propose a novel approach, SumLLaMA, which leverages contrastive learning pre-training and parameter-efficient fine-tuning. Contrastive learning pre-training is employed to construct contextual relations between components in a single bug report, enabling SumLLaMA to learn sequence-level representations. For parameter-efficient fine-tuning, we fine-tune a smaller adapter instead of the entire LLM, reducing the number of parameters trained to about 1/1500 of the original model, effectively mitigating the risk of overfitting. To evaluate the effectiveness of SumLLaMA, we compare it against five baseline models, including a state-of-the-art model, on a publicly available dataset. The experimental results show that SumLLaMA outperforms all baselines by up to 26.66, 17.10, and 24.01 points in ROUGE-1, ROUGE-2, and ROUGE-L metrics, respectively, achieving a state-of-the-art result for automated bug report summarization.},
+ author = {Xiang, B. M. and Shao, Y. N.},
+ year = {2024},
+ title = {SUMLLAMA: Efficient Contrastive Representations and Fine-Tuned Adapters for Bug Report Summarization},
+ keywords = {Bug report summarization;Codes;Computer bugs;contrastive representation;efficient fine-tuning;Self-supervised learning;Semantics;Software maintenance;Task analysis;Training;Vectors},
+ pages = {78562--78571},
+ volume = {12},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ doi = {10.1109/ACCESS.2024.3397326}
+}
+
+
+@article{Yang.2025,
+ abstract = {Retrieval-augmented generation (RAG)-based applications are gaining prominence due to their ability to leverage large language models (LLMs). These systems excel at combining retrieval mechanisms with generative capabilities, resulting in contextually relevant responses that enhance user experience. In particular, Transurban, a road operation company, replaced its rule-based virtual assistant (VA) with a RAG-based VA (RAGVA) to offer flexible customer interactions and support a wider range of scenarios. This paper presents an experience report from Transurban's engineering team on building and deploying a RAGVA, offering a step-by-step guide for creating a conversational application and engineering a RAGVA. The report serves as a reference for future researchers and practitioners. While the engineering processes for traditional software applications are well-established, the development and evaluation of RAG-based applications are still in their early stages, with numerous emerging challenges remaining uncharted. To address this gap, we conduct a focus group study with Transurban practitioners regarding developing and evaluating their RAGVA. We identified eight challenges encountered by the engineering team and proposed eight future directions that should be explored to advance the development of RAG-based applications. This study contributes to the foundational understanding of a RAG-based conversational application and the emerging AI software engineering challenges it presents.},
+ author = {Yang, R. and Fu, M. C. and Tantithamthavorn, C. and Arora, C. and Vandenhurk, L. and Chua, J.},
+ year = {2025},
+ title = {RAGVA: Engineering retrieval augmented generation-based virtual assistants in practice},
+ keywords = {AI engineering;LLMOps;responsible AI;Retrieval augmented generation;SE4AI;Software engineering;Virtual assistants},
+ volume = {226},
+ journal = {Journal of Systems and Software},
+ doi = {10.1016/j.jss.2025.112436}
+}
+
+
+@article{Zhang.2024,
+ abstract = {Commit messages are critical for code comprehension and software maintenance. Writing a high-quality message requires skill and effort. To support developers and reduce their effort on this task, several approaches have been proposed to automatically generate commit messages. Despite the promising performance reported, we have identified three significant and prevalent threats in these automated approaches: 1) the datasets used to train and evaluate these approaches contain a considerable amount of 'noise'; 2) current approaches only consider commits of a limited diff size; and 3) current approaches can only generate the subject of a commit message, not the message body. The first limitation may let the models 'learn' inappropriate messages in the training stage, and also lead to inflated performance results in their evaluation. The other two threats can considerably weaken the practical usability of these approaches. Further, with the rapid emergence of large language models (LLMs) that show superior performance in many software engineering tasks, it is worth asking: can LLMs address the challenge of long diffs and whole message generation? This article first reports the results of an empirical study to assess the impact of these three threats on the performance of the state-of-the-art auto generators of commit messages. We collected commit data of the Top 1,000 most-starred Java projects in GitHub and systematically removed noisy commits with bot-submitted and meaningless messages. We then compared the performance of four approaches representative of the state-of-the-art before and after the removal of noisy messages, or with different lengths of commit diffs. We also conducted a qualitative survey with developers to investigate their perspectives on simply generating message subjects. Finally, we evaluate the performance of two representative LLMs, namely UniXcoder and ChatGPT, in generating more practical commit messages. The results demonstrate that generating commit messages is of great practical value, considerable work is needed to mature the current state-of-the-art, and LLMs can be an avenue worth trying to address the current limitations. Our analyses provide insights for future work to achieve better performance in practice.},
+ author = {Zhang, Y. X. and Qiu, Z. Q. and Stol, K. J. and Zhu, W. H. and Zhu, J. X. and Tian, Y. C. and Liu, H.},
+ year = {2024},
+ title = {Automatic Commit Message Generation: A Critical Review and Directions for Future Work},
+ keywords = {benchmark;commit message generation;Commit-based software development;open collaboration},
+ pages = {816--835},
+ volume = {50},
+ number = {4},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ doi = {10.1109/TSE.2024.3364675}
+}
+
+

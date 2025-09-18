@@ -1,0 +1,155 @@
+TESTAUFGABEN FÜR WEATHERAPP PROJEKT
+====================================
+
+FUNKTIONALE TESTS
+=================
+
+T1-01 - Aktuelle Wetteranzeige für Standard-Standort
+Beschreibung: App starten und prüfen, ob aktuelle Wetterdaten für den Standardstandort angezeigt werden
+Erwartetes Ergebnis: HomeView zeigt Temperatur, Wetterbedingung, Luftfeuchtigkeit und andere Grunddaten an
+
+T1-02 - Standorterkennung aktivieren
+Beschreibung: Standortberechtigung erteilen und prüfen, ob aktueller Standort erkannt wird
+Erwartetes Ergebnis: App zeigt Wetterdaten für den aktuellen GPS-Standort an
+
+T1-03 - Wettervorhersage anzeigen
+Beschreibung: Auf ForecastView navigieren und 7-Tage-Vorhersage betrachten
+Erwartetes Ergebnis: Liste mit 7 Tagen, jeweils mit Datum, Wetter-Icon, Min/Max-Temperatur
+
+T1-04 - Detaillierte Wetterinformationen
+Beschreibung: Auf DetailsView navigieren und erweiterte Wetterinformationen prüfen
+Erwartetes Ergebnis: UV-Index, Luftdruck, Sichtweite, Windgeschwindigkeit, Sonnenauf-/untergang werden angezeigt
+
+T1-05 - Kartenansicht mit Wetter
+Beschreibung: MapView öffnen und Wetteroverlay auf Karte betrachten
+Erwartetes Ergebnis: Interaktive Karte mit Wetter-Informationen für verschiedene Standorte
+
+
+SUCHFUNKTIONEN
+==============
+
+T2-01 - Stadtsuche durchführen
+Beschreibung: In Suchfeld "Berlin" eingeben und Suchergebnisse prüfen
+Erwartetes Ergebnis: Liste mit Berlin-Varianten (Berlin, Germany; Berlin, USA etc.) wird angezeigt
+
+T2-02 - Stadt auswählen und Wetter anzeigen
+Beschreibung: Stadt aus Suchergebnissen auswählen
+Erwartetes Ergebnis: Wetterdaten für gewählte Stadt werden geladen und angezeigt
+
+T2-03 - Ungültige Suchanfrage
+Beschreibung: Nonsense-Text "xyz123" in Suchfeld eingeben
+Erwartetes Ergebnis: Keine Suchergebnisse oder entsprechende Fehlermeldung
+
+T2-04 - Leere Suchanfrage
+Beschreibung: Suchfeld leer lassen oder nur Leerzeichen eingeben
+Erwartetes Ergebnis: Keine Suche wird ausgeführt, keine Ergebnisse angezeigt
+
+
+EINSTELLUNGEN
+=============
+
+T3-01 - Temperatureinheit ändern
+Beschreibung: In SettingsView von Celsius auf Fahrenheit wechseln
+Erwartetes Ergebnis: Alle Temperaturangaben in der App werden in Fahrenheit angezeigt
+
+T3-02 - Windgeschwindigkeitseinheit ändern
+Beschreibung: Windgeschwindigkeitseinheit von km/h auf mph ändern
+Erwartetes Ergebnis: Windgeschwindigkeiten werden in mph angezeigt
+
+T3-03 - Dark Mode aktivieren
+Beschreibung: Dark Mode in den Einstellungen aktivieren
+Erwartetes Ergebnis: App wechselt zu dunklem Design
+
+T3-04 - Einstellungen persistieren
+Beschreibung: Einstellungen ändern, App schließen und neu starten
+Erwartetes Ergebnis: Geänderte Einstellungen bleiben erhalten
+
+
+NAVIGATION & UI
+===============
+
+T4-01 - Tab-Navigation
+Beschreibung: Zwischen allen 5 Tabs (Home, Map, Forecast, Details, Settings) wechseln
+Erwartetes Ergebnis: Alle Views laden korrekt und zeigen entsprechende Inhalte
+
+T4-02 - Pull-to-Refresh
+Beschreibung: In HomeView nach unten ziehen um Daten zu aktualisieren
+Erwartetes Ergebnis: Loading-Indikator erscheint, Wetterdaten werden neu geladen
+
+T4-03 - Responsive Design
+Beschreibung: App im Hochformat und Querformat testen
+Erwartetes Ergebnis: Layout passt sich an beide Orientierungen an
+
+T4-04 - Accessibility
+Beschreibung: VoiceOver aktivieren und App bedienen
+Erwartetes Ergebnis: Alle Elemente sind mit VoiceOver bedienbar
+
+
+DATENVERARBEITUNG
+=================
+
+T5-01 - API-Verbindung bei schlechtem Internet
+Beschreibung: Internetverbindung langsam machen und Wetterdaten laden
+Erwartetes Ergebnis: Loading-State wird angezeigt, dann Daten oder Timeout-Fehler
+
+T5-02 - Offline-Verhalten
+Beschreibung: Internetverbindung deaktivieren und App verwenden
+Erwartetes Ergebnis: Fehlermeldung wird angezeigt, zuletzt geladene Daten bleiben sichtbar
+
+T5-03 - Ungültiger API-Key
+Beschreibung: API-Key in WeatherService.swift durch ungültigen ersetzen
+Erwartetes Ergebnis: Authentifizierungsfehler wird angezeigt
+
+T5-04 - Datenaktualisierung nach Standortwechsel
+Beschreibung: Standort wechseln (simuliert) und Datenaktualisierung prüfen
+Erwartetes Ergebnis: Neue Wetterdaten für neuen Standort werden geladen
+
+
+PERFORMANCE TESTS
+=================
+
+T6-01 - App-Startzeit
+Beschreibung: Zeit messen vom App-Start bis zur vollständigen Anzeige der Wetterdaten
+Erwartetes Ergebnis: App startet in unter 3 Sekunden
+
+T6-02 - Speicherverbrauch
+Beschreibung: App längere Zeit verwenden und RAM-Verbrauch überwachen
+Erwartetes Ergebnis: Kein Memory Leak, stabiler Speicherverbrauch
+
+T6-03 - Schneller Standortwechsel
+Beschreibung: Schnell zwischen verschiedenen Städten wechseln
+Erwartetes Ergebnis: App reagiert flüssig, keine Crashes oder hängende Requests
+
+
+EDGE CASES
+==========
+
+T7-01 - Extremwetter-Daten
+Beschreibung: Standort mit extremen Wetterbedingungen auswählen (z.B. Antarktis)
+Erwartetes Ergebnis: Auch extreme Werte werden korrekt angezeigt
+
+T7-02 - Sehr lange Städtenamen
+Beschreibung: Stadt mit sehr langem Namen suchen
+Erwartetes Ergebnis: Name wird korrekt angezeigt oder abgekürzt
+
+T7-03 - Standort ohne Internetverbindung
+Beschreibung: GPS-Standort in Gebiet ohne Mobilnetz
+Erwartetes Ergebnis: Graceful Handling, Fallback auf letzte bekannte Daten
+
+T7-04 - Zeitzone-Wechsel
+Beschreibung: Gerätezeitzone ändern
+Erwartetes Ergebnis: Zeiten in der App passen sich entsprechend an
+
+
+ZUSAMMENFASSUNG
+===============
+Gesamt: 28 Testaufgaben
+- Funktionale Tests: 5
+- Suchfunktionen: 4
+- Einstellungen: 4
+- Navigation & UI: 4
+- Datenverarbeitung: 4
+- Performance Tests: 3
+- Edge Cases: 4
+
+Diese Testaufgaben decken alle wichtigen Funktionen der WeatherApp ab und helfen dabei, sowohl die Grundfunktionalität als auch Edge Cases zu überprüfen.
