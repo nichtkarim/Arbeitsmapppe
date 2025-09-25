@@ -14,11 +14,6 @@ Diese Arbeitsmappe dient ausschließlich der Dokumentation und Archivierung von 
 ## Zweck
 Forschungs- und Nachvollziehbarkeitsgrundlage für die Bachelorarbeit. Keine produktive Nutzung vorgesehen.
 
-## Nutzungshinweis
-Enthält Forschungsdaten und begleitende Artefakte. Einzelne Inhalte können lizenz-/urheberrechtlich geschützt sein. Weiterverwendung nur nach Prüfung.
-
-## Zitierempfehlung (Beispiel)
-Interne Arbeitsmappe zur Bachelorarbeit (2025), unveröffentlichtes Forschungskorpus.
 
 ---
-Stand: 2025-09-18
+Stand: 2025-09-25
